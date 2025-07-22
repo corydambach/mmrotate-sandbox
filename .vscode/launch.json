@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: cory-demo.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/demo/cory-demo.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/configs/redet",
+            "env": { "LD_LIBRARY_PATH": "/usr/lib/wsl/lib/" },
+            "args": ["./PA-SM-2020-06-12/satellite.png",
+                     "redet_re50_refpn_1x_dota_ms_rr_le90.py",
+                     "redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth",
+                     "--score-thr=0.1",
+                     "--merge_iou_thr=0.85",
+                     "--img_ratios", "1",
+                     "--patch_steps=256",
+                     "--out-file=pa-sm-2020-06-12-gpu"],
+            "justMyCode": false
+        }
+    ]
+}

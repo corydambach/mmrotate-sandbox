@@ -1,0 +1,4 @@
+mmrotate/
+model/
+__pycache__/
+**/*.pth
