@@ -6,24 +6,26 @@ import numpy as np
 
 @dataclass
 class Pnt:
-    x: int
-    y: int
+    x: float
+    y: float
 
 @dataclass
 class Vehicle():
-    x:       int
-    y:       int
-    width:   int
-    height:  int
-    theta:   int
+    x:          float
+    y:          float
+    width:      float
+    height:     float
+    theta:      float
+    confidence: float
     arr:     np.array
 
 @dataclass
 class VehicleExport():
     center:      Pnt
-    width:       int
-    height:      int
-    theta:       int
+    width:       float
+    height:      float
+    theta:       float
+    confidence:  float
     polygon:     Any
     label:       str
 
